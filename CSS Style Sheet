@@ -1,5 +1,4 @@
-<-- CSS Style Sheet !->
-<title>W3.CSS Template</title>
+<html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -19,3 +18,4 @@
 	/* Remove margins from "page content" on small screens */
 	@media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
+</html>
