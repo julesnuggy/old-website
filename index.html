@@ -64,6 +64,42 @@
 		color: #000;
 		text-align: left;
 	}
+	
+	/* Style EXPERIENCE tabs */
+	div.tab {
+	    overflow: hidden;
+	    border: 1px solid #ccc;
+	    background-color: #f1f1f1;
+	}
+
+	/* Style the buttons inside the tab */
+	div.tab button {
+	    background-color: inherit;
+	    float: left;
+	    border: none;
+	    outline: none;
+	    cursor: pointer;
+	    padding: 14px 16px;
+	    transition: 0.3s;
+	    font-size: 17px;
+	}
+
+	/* Change background color of buttons on hover */
+	div.tab button:hover {
+	    background-color: #ddd;
+	}
+
+	/* Create an active/current tablink class */
+	div.tab button.active {
+	    background-color: #ccc;
+	}
+
+	/* Style the tab content */
+	.tabcontent {
+	    display: none;
+	    padding: 6px 12px;
+	    border: 1px solid #ccc;
+	    border-top: none;
 	}
 </style>
 
@@ -108,11 +144,7 @@
 
 			<div class="column-text" id="experience">
 			<h2 style="text-align: left">My Experience</h2>
-				<div class="w3-bar w3-grey w3-opacity w3-hover-opacity-off w3-center w3-small">
-				    <a href="#work" class="w3-bar-item w3-button" style="width:33% !important">WORK</a>
-				    <a href="#education" class="w3-bar-item w3-button" style="width:33% !important">EDUCATION</a>
-				    <a href="#hobbies" class="w3-bar-item w3-button" style="width:33% !important">HOBBIES</a>
-				</div>
+	
 
 				<div class="tab">
 					<button class="tablinks" onclick="openCity(event, 'WORK')">WORK</button>
@@ -137,14 +169,35 @@
 					<p>BSc, 2:1 with Honours - Economics with Study in Continental Europe</p> 
 
 					<h3>Hills Road Sixth Form College</h3>
-					<p>More Stuff</p> 
+					<ul>Maths</ul>
+					<li>Chemistry</li> 
+					<li>English</li> 
+					<li>Spanish</li> 
 				</div>
 
 				<div id="HOBBIES" class="tabcontent">
-					<h3>Tokyo</h3>
-					<p>Tokyo is the capital of Japan.</p>
+					<h3>My Hobbies</h3>
+					<ul>Gym (free weights)</ul>
+					<ul>Tae Kwon Do (1st Dan Black Belt)</ul>
+					<ul>>Reading (fiction, adventure, sci-fi)</ul>
+					<ul>>Video Games (PS4)</ul>
 				</div>
 
+				<script>
+				function openCity(evt, cityName) {
+				    var i, tabcontent, tablinks;
+				    tabcontent = document.getElementsByClassName("tabcontent");
+				    for (i = 0; i < tabcontent.length; i++) {
+				        tabcontent[i].style.display = "none";
+				    }
+				    tablinks = document.getElementsByClassName("tablinks");
+				    for (i = 0; i < tablinks.length; i++) {
+				        tablinks[i].className = tablinks[i].className.replace(" active", "");
+				    }
+				    document.getElementById(cityName).style.display = "block";
+				    evt.currentTarget.className += " active";
+				}
+				</script>
 			</div>
 
 		</center>
