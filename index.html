@@ -141,10 +141,10 @@
 			<h2 style="text-align: left">My Experience</h2>
 	
 
-				<div class="tab">
-					<button class="tablinks" onclick="openCity(event, 'WORK')">WORK</button>
-					<button class="tablinks" onclick="openCity(event, 'EDUCATION')">EDUCATION</button>
-					<button class="tablinks" onclick="openCity(event, 'HOBBIES')">HOBBIES</button>
+				<div class="tab" onload="openTab(event, 'WORK')>
+					<button class="tablinks" onclick="openTab(event, 'WORK')">WORK</button>
+					<button class="tablinks" onclick="openTab(event, 'EDUCATION')">EDUCATION</button>
+					<button class="tablinks" onclick="openTab(event, 'HOBBIES')">HOBBIES</button>
 				</div>
 
 				<div id="WORK" class="tabcontent">
@@ -157,7 +157,7 @@
 					<p>"Dragon's Apprentice" Competition Finalist (2009)</p>
 
 					<h3>Further Information</h3>
-					<p>Check out my <a href = "https://www.linkedin.com/in/julian-ng-43589420/">LinkedIn</a> page for more details</p>
+					<p>Check out my <a href = "https://www.linkedin.com/in/julian-ng-43589420/" target="_blank">LinkedIn</a> page for more details</p>
 				</div>
 
 				<div id="EDUCATION" class="tabcontent">
@@ -180,7 +180,7 @@
 				</div>
 
 				<script>
-				function openCity(evt, cityName) {
+				function openTab(evt, cityName) {
 				    var i, tabcontent, tablinks;
 				    tabcontent = document.getElementsByClassName("tabcontent");
 				    for (i = 0; i < tabcontent.length; i++) {
@@ -198,14 +198,31 @@
 
 			<div class="column-text" id="contact">
 			<h2 style="text-align: left">Contact Details</h2>
-			    <div class="w3-section">
-					<p><i class="fa fa-map-marker" style="font-size:36px"></i> London, UK</p>
-					<p><i class="fa fa-phone" style="font-size:36px"></i> Phone: 07766 656721</p>
-					<p><i class="fa fa-envelope" style="font-size:36px"> </i> Email: julesnuggy@gmail.com</p>
-					<p><i class="fa fa-github" style="font-size:36px" aria-hidden="true"></i>Github Username: julesnuggy</p>
-					<p><i class="fa fa-free-code-camp" style="font-size:36px" aria-hidden="true"></i>Free Code Camp Username: julesnuggy</p>
-					<p><img src="http://i1173.photobucket.com/albums/r583/julesnuggy/codewars.png?t=1511556460"  style="width:36px"> Username: julesnuggy</p>
-
+			    <table style="width: 100%">
+					<tr>
+						<td><i class="fa fa-map-marker" style="font-size:36px"></i></td>
+						<td>London, UK</td>
+					</tr>
+					<tr>
+						<td><i class="fa fa-phone" style="font-size:36px"></i></td>
+						<td>Phone: 07766 656721</td>
+					</tr>
+					<tr>
+						<td><i class="fa fa-envelope" style="font-size:36px"> </i></td> 
+						<td>Email: julesnuggy@gmail.com</td>
+					</tr>	
+					<tr>
+						<td><i class="fa fa-github" style="font-size:36px" aria-hidden="true"></i></td>
+						<td>Github Username: julesnuggy</td>
+					</tr>
+					<tr>
+						<td><i class="fa fa-free-code-camp" style="font-size:36px" aria-hidden="true"></i></td>
+						<td>Free Code Camp Username: julesnuggy</td>
+					</tr>
+					<tr>
+						<td><img src="http://i1173.photobucket.com/albums/r583/julesnuggy/codewars.png?t=1511556460"  style="width:36px"></td>
+						<td>Username: julesnuggy</td>
+					</tr>
 
 			</div>
 
