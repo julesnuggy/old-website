@@ -69,7 +69,7 @@
 
 	/* Style the buttons inside the tab */
 	div.tab button {
-	    width: 33%;
+	    width: (100/3)%;
 	    background-color: inherit;
 	    float: left;
 	    border: none;
@@ -104,7 +104,107 @@
 		text-align: center;
 		padding: 5% 0% 5% 0%;
 	}
+
+	/* Style SLIDESHOW */
+	/*source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow*/;
+	* {box-sizing:border-box}
+	body {font-family: Verdana,sans-serif;margin:0}
+	.mySlides {display:none}
+
+	/* Slideshow container */
+	.slideshow-container {
+	  max-width: 1000px;
+	  position: relative;
+	  margin: auto;
+	}
+
+	/* Next & previous buttons */
+	.prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: auto;
+	  padding: 16px;
+	  margin-top: -22px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 18px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover, .next:hover {
+	  background-color: rgba(0,0,0,0.8);
+	}
+
+	/* Caption text */
+	.text {
+	  color: #f2f2f2;
+	  font-size: 15px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  bottom: 8px;
+	  width: 100%;
+	  text-align: center;
+	}
+
+	/* Number text (1/3 etc) */
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+
+	/* The dots/bullets/indicators */
+	.dot {
+	  cursor: pointer;
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.active, .dot:hover {
+	  background-color: #717171;
+	}
+
+	/* Fading animation */
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+
+	@-webkit-keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+
+	@keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+
+	/* On smaller screens, decrease text size */
+	@media only screen and (max-width: 300px) {
+	  .prev, .next,.text {font-size: 11px}
+	}
 </style>
+
+
 
 <body onload="openTab(event, 'WORK')">
 
@@ -120,19 +220,59 @@
 	<!-- Page Content -->
 	<div style="margin: 0% 5% 0% 5%;" id="main">
 
-	<!-- Header/Home -->
+	<!-- Home / Slideshow -->
 		<header class="text-center" id="home">
 		  	<h1>Julian Ng</h1>
 		    <p>Welcome to my page!</p>
 		</header>
 
 		<center>
-			<div>
+			<div class="slideshow-container">
+			  <div class="mySlides fade">
+			    <div class="numbertext">1 / 3</div>
 		  		<img class="home-image" src="http://i1173.photobucket.com/albums/r583/julesnuggy/20171025220618_1.jpg~original" alt="julesnuggy" class="text-center">
-			</div>	
-			<button class="btn btn-info"><i class="fa fa-arrow-left"></i></button> 
-			<button class="btn btn-primary"><i class="fa fa-thumbs-up"></i></button>
-			<button class="btn btn-info"><i class="fa fa-arrow-right"></i></button>
+			    <div class="text">Me (<span><i class="fa fa-map-marker contact-icon"></i></span> Melbourne, Australia)</div>
+			  </div>
+
+			  <div class="mySlides fade">
+			    <div class="numbertext">2 / 5</div>
+			    <img src="http://i1173.photobucket.com/albums/r583/julesnuggy/IMG_20171021_184622.jpg" style="width:100%">
+			    <div class="text">Beautiful sunset with my beautiful boyfriend (<span><i class="fa fa-map-marker contact-icon"></i></span> Sydney, Australia)</div>
+			  </div>
+
+			  <div class="mySlides fade">
+			    <div class="numbertext">3 / 5</div>
+			    <img src="http://i1173.photobucket.com/albums/r583/julesnuggy/IMG_20170820_190909.jpg" style="width:100%">
+			    <div class="text">Holiday in Portugal (<span><i class="fa fa-map-marker contact-icon"></i></span> Ponte de Lima, Portugal)</div>
+			  </div>
+
+			  <div class="mySlides fade">
+			    <div class="numbertext">4 / 5</div>
+			    <img src="http://i1173.photobucket.com/albums/r583/julesnuggy/IMG_20171006_215942.jpg" style="width:100%">
+			    <div class="text">Robot Restaurant (<span><i class="fa fa-map-marker contact-icon"></i></span> Tokyo, Japan)</div>
+			  </div>
+
+			  <div class="mySlides fade">
+			    <div class="numbertext">5 / 5</div>
+			    <img src="http://i1173.photobucket.com/albums/r583/julesnuggy/20171012074747.jpg" style="width:100%">
+			    <div class="text">Sunrise in the air (<span><i class="fa fa-map-marker contact-icon"></i></span> On A Plane)</div>
+			  </div>
+
+
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			  <span class="dot" onclick="currentSlide(4)"></span> 
+			  <span class="dot" onclick="currentSlide(5)"></span> 
+			</div>
+
+			<button class="btn btn-primary"><i class="fa fa-heart-o"></i></button>
 
 	 <!-- About Section -->
 		  	<div class="column-text" id="about">
@@ -213,23 +353,23 @@
 					</tr>
 					<tr>
 						<td><i class="fa fa-phone text-center contact-icon"></i></td>
-						<td>07766 656721</td>
+						<td><a href="tel:+447766656721">+44 (0)7766 656721</a></td>
 					</tr>
 					<tr>
 						<td><i class="fa fa-envelope text-center contact-icon"> </i></td> 
-						<td>julesnuggy@gmail.com</td>
+						<td><a href="mailto:julesnuggy@gmail.com">julesnuggy@gmail.com</a>a</td>
 					</tr>	
 					<tr>
 						<td><i class="fa fa-github text-center contact-icon" aria-hidden="true"></i></td>
-						<td>Github: julesnuggy</td>
+						<td><a href="https://github.com/julesnuggy">julesnuggy</a></td>
 					</tr>
 					<tr>
 						<td><i class="fa fa-free-code-camp text-center  contact-icon" aria-hidden="true"></i></td>
-						<td>Free Code Camp: julesnuggy</td>
+						<td><a href="https://www.freecodecamp.org/julesnuggy">julesnuggy</a></td>
 					</tr>
 					<tr>
 						<td><img src="http://i1173.photobucket.com/albums/r583/julesnuggy/codewars%20white.png?t=1511559505" style="width:36px; text-align: center"></td>
-						<td>Codewars: julesnuggy</td>
+						<td><a href="https://www.codewars.com/users/julesnuggy">julesnuggy</a></td>
 					</tr>
 
 			</div>
