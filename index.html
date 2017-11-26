@@ -305,6 +305,10 @@
 					<button class="tablinks" onclick="openTab(event, 'HOBBIES')">HOBBIES</button>
 				</div>
 
+				<div class="tabcontent" style="display: initial">
+					<p>Click one of the tabs to find out more about my experience.</p>
+				</div>
+
 				<div id="WORK" class="tabcontent">
 					<h3>Thales UK</h3>
 					<p><i>Senior Management Consultant (2011-2017)</i> - Took on a range of roles and worked on a range of bids and projects in innovation, open source intelligence, business change and data analytics.</p>
@@ -315,26 +319,28 @@
 					<p>"Dragon's Apprentice" Competition Finalist (2009)</p>
 
 					<h3>Further Information</h3>
-					<p>Check out my <a class="a-link" href = "https://www.linkedin.com/in/julian-ng-43589420/" target="_blank">LinkedIn</a> page for more details</p>
+					<p>Check out my <a class="a-link" href = "https://www.linkedin.com/in/julian-ng-43589420/" target="_blank">LinkedIn</a> page for more details.</p>
 				</div>
 
 				<div id="EDUCATION" class="tabcontent">
 					<h3>University of Bristol</h3>
-					<p>Economics with Study in Continental Europe, BSc, 2:1 with Honours</p> 
+					<p>2005-2009</p>
+					<p>Economics with Study in Continental Europe, BSc (2:1 with Honours)</p> 
+					<li>2008: Erasmus year abroad studying - Universitat de Valencia</li>
 
 					<h3>Hills Road Sixth Form College</h3>
-					<li>Maths - A</li>
-					<li>Chemistry - A</li> 
-					<li>English - A</li> 
-					<li>Spanish - A</li> 
+					<p>2003-2005</p>
+					<p>A-Levels: Maths (A), Chemistry (A), Spanish (A), English Literature (A)</p>
+					<p>AS-Levels: Maths (A), Chemistry (A), Spanish (A), Physics (A) </p>
 				</div>
 
 				<div id="HOBBIES" class="tabcontent">
 					<h3>My Hobbies</h3>
-					<li>Gym (free weights)</li>
-					<li>Tae Kwon Do (1st Dan Black Belt)</li>
-					<li>Reading (fiction, adventure, sci-fi)</li>
-					<li>Video Games (PS4)</li>
+					<li>Travelling - I have a passion for travelling around the world to see, explore and taste new countries and cultures! Still a lot of places on the bucket list!</li>
+					<li>Reading - mostly fiction, adventure, sci-fi. Favourite authors / series include: Garth Nix (Old Kingdom), Philip Pullman (His Dark Materials), Brandon Sanderson (Mistborn), and Terry Pratchet (Disc World).</li>
+					<li>Video Games - forever PlayStation loyal, though I do also have a special place in my heart for NES and SNES from my childhood.</li>
+					<li>Gym - I try to stay fit by going to the gym 3 times a week, mostly free weights exercises.</li>
+					<li>Tae Kwon Do - I achieved my 1st Dan Black Belt during my last year at uni!</li>
 				</div>
 
 			</div>
@@ -403,7 +409,7 @@
 	}
 
 	/* Script for EXPERIENCE tab buttons*/
-	function openTab(evt, cityName) {
+	function openTab(evt, tabName) {
 	    var i, tabcontent, tablinks;
 	    tabcontent = document.getElementsByClassName("tabcontent");
 	    for (i = 0; i < tabcontent.length; i++) {
@@ -413,7 +419,7 @@
 	    for (i = 0; i < tablinks.length; i++) {
 	        tablinks[i].className = tablinks[i].className.replace(" active", "");
 	    }
-	    document.getElementById(cityName).style.display = "block";
+	    document.getElementById(tabName).style.display = "block";
 	    evt.currentTarget.className += " active";
 	}
 	</script>
