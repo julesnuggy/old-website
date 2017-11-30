@@ -50,26 +50,23 @@
 	.nav-bar {
 		width:100%;
 		overflow:hidden;
+		text-align: center;
+		background-color:#000;
 		display:inline-block;
-		color:#fff!important;
-		background-color:#000!important
-		opacity:0.60
-		font-size:12px!important
+		opacity:0.60;
 	}
 
-	.nav-bar:hover{opacity:1}
-
-	.nav-bar .nav-item {
-		padding:8px 16px;
-		float:left;
-		width:auto;
-		border:none;
-		outline:none;
-		display:block
-		}
-
-	.nav-bar .nav-button{white-space:normal}
+	.nav-bar a {
+		float: left;
+		color:#fff;
+		text-align: center;
+		padding: 10px 10px;
+		font-size: 15px;
 	}
+	.nav-bar a:hover {
+		opacity:1
+	}
+
 
 	/* Other general styles */
 	.a-link {
@@ -245,11 +242,11 @@
 <body>
 
 	<div class="stay-top" id="myNavbar">
-		<div class="nav-bar nav-bar:hover">
-		    <a href="#" class="nav-item nav-button" style="width:25% !important">HOME</a>
-		    <a href="#about" class="nav-item nav-button" style="width:25% !important">ABOUT</a>
-		    <a href="#experience" class="nav-item nav-button" style="width:25% !important">EXPERIENCE</a>
-		    <a href="#contact" class="nav-item nav-button" style="width:25% !important">CONTACT</a>
+		<div class="nav-bar">
+		    <a href="#" style="width:25% !important">HOME</a>
+		    <a href="#about" style="width:25% !important">ABOUT</a>
+		    <a href="#experience" style="width:25% !important">EXPERIENCE</a>
+		    <a href="#contact" style="width:25% !important">CONTACT</a>
 		</div>
 	</div>
 
