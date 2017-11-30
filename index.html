@@ -132,100 +132,103 @@
 
 	/* Style SLIDESHOW */
 	* {box-sizing:border-box}
-	.mySlides {-webkit-animation-fill-mode: forwards; animation-fill-mode: forwards;}
+	.mySlides {
+		-webkit-animation-fill-mode: forwards; 
+		animation-fill-mode: forwards;
+		z-index: -1;
+}
 
 	/* Slideshow container */
 	.slideshow-container {
-	  max-width: 1000px;
-	  position: relative;
-	  margin: auto;
-	  z-index: -1;
+		max-width: 1000px;
+		position: relative;
+		margin: auto;
 	}
 
 	/* Next & previous buttons */
 	.prev, .next {
-	  cursor: pointer;
-	  position: absolute;
-	  top: 50%;
-	  width: auto;
-	  padding: 16px;
-	  margin-top: -22px;
-	  color: white;
-	  font-weight: bold;
-	  font-size: 18px;
-	  transition: 0.6s ease;
-	  border-radius: 0 3px 3px 0;
-  	  z-index: 0;
-	}
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		width: auto;
+		padding: 16px;
+		margin-top: -22px;
+		color: white;
+		font-weight: bold;
+		font-size: 18px;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+		  z-index: 0;
+		}
 
 	/* Position the "next button" to the right */
 	.next {
-	  right: 0;
-	  border-radius: 3px 0 0 3px;
+		right: 0;
+		border-radius: 3px 0 0 3px;
 	}
 
 	/* On hover, add a black background color with a little bit see-through */
 	.prev:hover, .next:hover {
-	  background-color: rgba(0,0,0,0.8);
+		background-color: rgba(0,0,0,0.8);
 	}
 
 	/* Caption text */
 	.text {
-	  color: #f2f2f2;
-	  font-size: 15px;
-	  padding: 8px 12px;
-	  position: absolute;
-	  bottom: 8px;
-	  width: 100%;
-	  text-align: center;
+		color: #f2f2f2;
+		font-size: 15px;
+		padding: 8px 12px;
+		position: absolute;
+		bottom: 8px;
+		width: 100%;
+		text-align: center;
 	}
 
 	/* Number text (1/3 etc) */
 	.numbertext {
-	  color: #f2f2f2;
-	  font-size: 12px;
-	  padding: 8px 12px;
-	  position: absolute;
-	  top: 0;
+		color: #f2f2f2;
+		font-size: 12px;
+		padding: 8px 12px;
+		position: absolute;
+		top: 0;
 	}
 
 	/* The dots/bullets/indicators */
 	.dot {
-	  cursor: pointer;
-	  height: 15px;
-	  width: 15px;
-	  margin: 0 2px;
-	  background-color: #bbb;
-	  border-radius: 50%;
-	  display: inline-block;
-	  transition: background-color 0.6s ease;
+		cursor: pointer;
+		height: 15px;
+		width: 15px;
+		margin: 0 2px;
+		background-color: #bbb;
+		border-radius: 50%;
+		display: inline-block;
+		transition: background-color 0.6s ease;
 	}
 
 	.active, .dot:hover {
-	  background-color: #717171;
+		background-color: #717171;
 	}
 
 	/* Fading animation */
 	.fade {
-	  -webkit-animation-name: fade;
-	  -webkit-animation-duration: 1.5s;
-	  animation-name: fade;
-	  animation-duration: 1.5s;
+		-webkit-animation-name: fade;
+		-webkit-animation-duration: 1.5s;
+		animation-name: fade;
+		animation-duration: 1.5s;
 	}
 
 	@-webkit-keyframes fade {
-	  from {opacity: .4} 
-	  to {opacity: 1}
+		from {opacity: .4} 
+		to {opacity: 1}
 	}
 
 	@keyframes fade {
-	  from {opacity: .4} 
-	  to {opacity: 1}
+		from {opacity: .4} 
+		to {opacity: 1}
 	}
 
 	/* On smaller screens, decrease text size */
 	@media only screen and (max-width: 300px) {
-	  .prev, .next,.text {font-size: 11px}
+		.prev, .next,.text {font-size: 11px}
 	}
 
 
@@ -310,9 +313,9 @@
 
 				First, this has long been an interest of mine - my favourite past projects as a management consultant were those that involved building tools and models using VBA for Excel, typically to churn through masses of data to derive meaningful insights and generate visualisations. This coding skill, which I developed from the ground up through self-teaching whilst working, has always fascinated and inspired me. Developing a tangible output which the customer could use over and over again, and the journey of getting there - overcoming many obstacles and learning new things each day - has always been extremely satisfying for me. Whilst my work implenting solutions based on VBA for Excel has been interesting, I want to extend into "true" programming and develop applications outside of Excel. <br><br> 
 
-				Secondly, my partner and I recently lost our home and all our possessions. This might seem like an odd reason to make me want to become a programmer, but after this traumatic event, we took 6 weeks off to go travelling together. This gave us the breathing space we needed and during that time I reconsidered some of my life choices - taking stock of the good, the bad, and the 'meh' - and committed myself to being less complacent and risk-averse and do what's better for me in the long term. I have delayed making this jump into the programming world for 5 years now, and I don't want to waste another minute. <br><br> 
+				Secondly, my partner and I recently lost our home and all our possessions. This might seem like an odd reason to make me want to become a programmer, but after this traumatic event, we took 6 weeks off to go travelling together. This gave us the breathing space we needed and during that time I reconsidered some of my life choices - taking stock of the good, the bad, and the 'meh' - and committed myself to being less complacent,  less risk-averse, and do what's better for me in the long term. I have delayed making this jump into the programming world for over 5 years now, and I don't want to waste another minute. <br><br> 
 
-				So that is why I want to join Founders & Coders - to realise my dream and ambition of becoming a fully fledged coder and begin my journey of becoming a professional in this field! I only discovered F&C at the beginning of November, so I've dedicated the majority of my spare time to complete all of the course pre-requisites in time whilst balancing work and life commitments, to realise this long-held ambition of mine.
+				So that is why I want to join Founders & Coders - to realise my dream and ambition of becoming a fully fledged coder and begin my journey of becoming a professional in this field! I only discovered F&C at the beginning of November, so I've dedicated the majority of my spare time to complete all of the course pre-requisites in time whilst balancing work and life commitments, to realise this long-held ambition of mine. I've set my heart on F&C because I believe its approach drives a strong community-based approach (within F&C, with its partners, and with those you code for) and operates in a fast-paced environment which immerses its students into real work quickly, which I believe is the best way to embed learning.
 			    </p>
 			</div>
 
@@ -332,29 +335,28 @@
 
 				<div id="WORK" class="tabcontent">
 
-					<img src = "https://image.ibb.co/mgiFcw/Logo_Thales.png" style="height:100px"">
+					<img src = "https://image.ibb.co/mgiFcw/Logo_Thales.png" style="width:200px"">
 					<p><i>Senior Management Consultant (2011-2017)</i> - Took on a range of roles and worked on a range of bids and projects in innovation, open source intelligence, business change, organisation design and data analytics.</p>
-					<p>Awarded the "Annual Managing Director’s Award" (2013)</p>
+					<li>Awarded the "Annual Managing Director’s Award" (2013)</li>
 					<br>
 
-					<img src = "https://image.ibb.co/jTez4b/Logo_QQ_2.png" style="height:100px""><
+					<img src = "https://image.ibb.co/jTez4b/Logo_QQ_2.png" style="width:200px"">
 					<p><i>Management Consultant (2009-2011)</i> - Completed various roles and projects in business change, operational research, data analytics and business compliance.</p>
-					<p>Awarded the "Client Impact Practice Award" (2010)</p>
-					<p>"Dragon's Apprentice" Competition Finalist (2009)</p>
+					<li>Awarded the "Client Impact Practice Award" (2010)</li>
+					<li>"Dragon's Apprentice" Competition Finalist (2009)</li>
 					<br>
 
-					<h3>Further Information</h3>
-					<p>Check out my <a class="a-link" href = "https://www.linkedin.com/in/julian-ng-43589420/" target="_blank">LinkedIn</a> page for more details.</p>
+					<p>Check out my <a class="a-link" href = "https://www.linkedin.com/in/julian-ng-43589420/" target="_blank">LinkedIn</a> page for more information!</p>
 				</div>
 
 				<div id="EDUCATION" class="tabcontent">
-					<img src = "https://image.ibb.co/gfZz4b/Logo_UOB.jpg" style="height:100px"">
+					<img src = "https://image.ibb.co/gfZz4b/Logo_UOB.jpg" style="width:200px"">
 					<p>2005-2009</p>
 					<p>Economics with Study in Continental Europe, BSc (2:1 with Honours)</p> 
 					<li>2008: Erasmus year abroad studying - Universitat de Valencia</li>
 					<br>
 
-					<img src = "https://image.ibb.co/cXOFcw/Logo_HRSC_2.png" style="height:100px">
+					<img src = "https://image.ibb.co/cXOFcw/Logo_HRSC_2.png" style="width:200px">
 					<p>2003-2005</p>
 					<p>A-Levels: Maths (A), Chemistry (A), Spanish (A), English Literature (A)</p>
 					<p>AS-Levels: Maths (A), Chemistry (A), Spanish (A), Physics (A) </p>
