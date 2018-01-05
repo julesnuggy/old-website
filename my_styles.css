@@ -225,3 +225,23 @@
 	@media only screen and (max-width: 300px) {
 		.prev, .next,.text {font-size: 11px}
 	}
+
+	/*Style the CONTACT section*/
+	.my-block {
+		height: 120px;
+		width: 75%;
+		display: flex;
+	    display: -webkit-flex; /* Safari */
+	    background-color: #868da4;
+	    box-sizing: border-box;
+	    border: solid 3px rgb(143, 7, 49);
+	    border-radius: 10px;
+	    margin: auto;
+	    align-items: center;
+	    text-align: center;
+	    justify-content: center;
+	}
+
+	.my-block-item {
+		flex: 1;
+	}
