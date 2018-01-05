@@ -3,244 +3,12 @@
 <title>julesnuggy's webpage</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin">
 
-
-<style>
-	body {
-		color: #fff;
-		font-family: "Libre Franklin", serif;
-		background-color:#0d1b4a;
-	}
-
-	header {
-		color: #fff;
-		font-family: "Libre Baskerville", serif;
-		text-align: center;
-		padding-top: 40px;
-	}
-
-	h1  {
-		font-family: "Libre Baskerville", serif;
-		font-size:64px!important
-	}
-
-	h2 {
-		font-family: "Libre Baskerville", serif;
-		font-size:50px;
-		font-weight: bold;
-		padding-top: 20px;
-	}
-	
-	h3 {
-		font-family: "Libre Baskerville", serif;
-		font-weight: bold;
-	}
-
-	li {
-		line-height: 1.5;
-		list-style-position:outside;
-	}
-
-	/* Classes for the menu nav bar */
-	.stay-top {
-		position:fixed;
-		width:100%;
-		z-index:1;
-		top:0;
-		left: 0;
-	}
-	
-	.nav-bar {
-		width:100%;
-		overflow:hidden;
-		text-align: center;
-		background-color:#000;
-		opacity:0.60;
-	}
-
-	.nav-bar a {
-		float: left;
-		color:#fff;
-		text-align: center;
-		font-size: 15px;
-		padding: 10px;
-	}
-	.nav-bar a:hover {
-		background-color:#3f516e;
-		opacity:1
-	}
-
-	/* Other general styles */
-	.a-link {
-	    color: #FFE28A;
-	    background-color: transparent;
-	    text-decoration: underline;
-	}
-
-	tr, td {
-	    background-color: #868da4;
-	    border: none;
-	    padding: 10px 0px 10px 0px;
-	}
-
-	.column-text {
-		width: 100%;
-		margin-bottom: 1em;
-		text-align: justify!important;
-		padding: 10% 0% 30% 0%;
-
-	}
-	
-	/* Style EXPERIENCE tabs */
-	div.tab {
-	    overflow: hidden;
-	    border: none;
-	    background-color: #25315c;
-	}
-
-	/* Style the buttons inside the tab */
-	div.tab button {
-	    width: 33.33333333333%;
-	    background-color: inherit;
-	    float: left;
-	    border: none;
-	    outline: none;
-	    cursor: pointer;
-	    transition: 0.3s;
-	    font-size: 17px;
-	    padding: 2% 2% 2% 2%;
-	    color: #fff;
-	    font-weight: bold;
-
-	}
-
-	/* Change background color of buttons on hover */
-	div.tab button:hover {
-	    background-color: #0b1842;
-	}
-
-	/* Create an active/current tablink class */
-	div.tab button.active {
-	    background-color: #060d25;
-	}
-
-	/* Style the tab content */
-	.tabcontent {
-	    display: none;
-	    padding: 5% 5% 5% 5%;
-	    border: none;
-	    border-top: none;
-	    background-color: #868da4;
-	}
-
-	/* Style SLIDESHOW */
-	* {box-sizing:border-box}
-	.mySlides {
-		-webkit-animation-fill-mode: forwards; 
-		animation-fill-mode: forwards;
-		z-index: -1;
-}
-
-	/* Slideshow container */
-	.slideshow-container {
-		max-width: 1000px;
-		position: relative;
-		margin: auto;
-	}
-
-	/* Next & previous buttons */
-	.prev, .next {
-		cursor: pointer;
-		position: absolute;
-		top: 50%;
-		width: auto;
-		padding: 16px;
-		margin-top: -22px;
-		color: white;
-		font-weight: bold;
-		font-size: 18px;
-		transition: 0.6s ease;
-		border-radius: 0 3px 3px 0;
-		  z-index: 0;
-		}
-
-	/* Position the "next button" to the right */
-	.next {
-		right: 0;
-		border-radius: 3px 0 0 3px;
-	}
-
-	/* On hover, add a black background color with a little bit see-through */
-	.prev:hover, .next:hover {
-		background-color: rgba(0,0,0,0.8);
-	}
-
-	/* Caption text */
-	.text {
-		color: #f2f2f2;
-		font-size: 15px;
-		padding: 8px 12px;
-		position: absolute;
-		bottom: 8px;
-		width: 100%;
-		text-align: center;
-	}
-
-	/* Number text (1/3 etc) */
-	.numbertext {
-		color: #f2f2f2;
-		font-size: 12px;
-		padding: 8px 12px;
-		position: absolute;
-		top: 0;
-	}
-
-	/* The dots/bullets/indicators */
-	.dot {
-		cursor: pointer;
-		height: 15px;
-		width: 15px;
-		margin: 0 2px;
-		background-color: #bbb;
-		border-radius: 50%;
-		display: inline-block;
-		transition: background-color 0.6s ease;
-	}
-
-	.active, .dot:hover {
-		background-color: #717171;
-	}
-
-	/* Fading animation */
-	.fade {
-		-webkit-animation-name: fade;
-		-webkit-animation-duration: 1.5s;
-		animation-name: fade;
-		animation-duration: 1.5s;
-	}
-
-	@-webkit-keyframes fade {
-		from {opacity: .4} 
-		to {opacity: 1}
-	}
-
-	@keyframes fade {
-		from {opacity: .4} 
-		to {opacity: 1}
-	}
-
-	/* On smaller screens, decrease text size */
-	@media only screen and (max-width: 300px) {
-		.prev, .next,.text {font-size: 11px}
-	}
-
-
-
-
-</style>
-
+<head>
+	<link rel="stylesheet" href="my_styles.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin">
+</head>
 
 
 <body>
@@ -320,9 +88,9 @@
 
 				Secondly, my partner and I recently lost our home and all our possessions in a fire. This might seem like an odd reason to make me want to become a programmer, but after this traumatic event we took 6 weeks off to go travelling together. This gave us the breathing space we needed and during that time I reconsidered some of my life choices. I finally decided that I would commit myself to being less complacent and less risk-averse, and start doing what's better for me in the long term - professionally and personally. <br><br> 
 
-				So that is why I left my job at the end of 2017 and made this page - to have a fresh start in 2018 and realise my dream and ambition of becoming a fully fledged coder. Over time, I'll be making alterations and improvements as I learn more and draw inspiration from others. I am primarily focusing on HTML & CSS, JavaScript, and Ruby for now and hope to get onto a Coding Bootcamp to help accelerate this learning and establish professional connections to land me that dream job. 
+				So that is why I left my job at the end of 2017 and made this page - to have a fresh start in 2018 and realise my dream and ambition of becoming a fully fledged coder. Over time, I'll be making alterations and improvements as I learn more and draw inspiration from others. I am primarily focusing on HTML & CSS, JavaScript, and Ruby for now and hope to get onto a Coding Bootcamp to help accelerate this learning and establish professional connections to land me that dream job. <br><br> 
 
-				My first attempt was with one of the newer Bootcamps called <a href = "https://foundersandcoders.com/" target="_blank">Founders & Coders</a>. I got up to the interview stage with them and on 27 December 2017, I found out that, unfortunately, I did not get on. I dealt with this disappointment much better than I had anticipated (espesically since it was Christmas time and nearing my birthday) and I see that as a positive sign in myself and how I have grown as a person since Grenfell and from having Lee in my life. Despite not getting on, I am grateful for having found them as that opportunity really spurred me on to taking the dive to leave my job to do this.
+				My first attempt was with one of the newer Bootcamps called <a href = "https://foundersandcoders.com/" target="_blank">Founders & Coders</a>. I got up to the interview stage with them and on 27 December 2017, I found out that, unfortunately, I did not get on. I dealt with this disappointment much better than I had anticipated (espesically since it was Christmas time and nearing my birthday) and I see that as a positive sign in myself and how I have grown as a person since Grenfell and from having Lee in my life. Despite not getting on, I am grateful for having found them as that opportunity really spurred me on to taking the dive to leave my job to do this. <br><br> 
 
 				My next step is to re-apply for <a href = "http://www.makersacademy.com/" target="_blank">Makers Academy</a>, which I previously applied to in 2015 and was actually successfully accepted onto but I made the mistake of not going with my gut instinct and taking that opportunity. Part of this fresh start for me is about exorcising some of my personal demons to overcome these fears and listen more to my heart and not be too influenced by certain people around me.
 			    </p>
@@ -378,29 +146,28 @@
 								<td><img src="https://image.ibb.co/c3jAAG/hobby_travel.png" style="height:50px"></td>
 								<td>I have a passion for travelling around the world to see, explore and taste new countries and cultures! Still a lot of places on the bucket list!</td>
 							</tr>
+					
+							<tr>
+								<td><img src="https://image.ibb.co/mHkvcw/hobby_reading.png" style="height:50px"></td>
+								<td>Mostly fiction, adventure, sci-fi. Favourite authors / series include: Garth Nix (Old Kingdom), Philip Pullman (His Dark Materials), Brandon Sanderson (Mistborn), and Terry Pratchet (Disc World).</td>
+							</tr>
+
+							<tr>
+								<td><img src="https://image.ibb.co/mBMqAG/hobby_vg.png" style="height:50px"></td>
+								<td>Forever PlayStation loyal, though I do also have a special place in my heart for NES and SNES from my childhood.</td>
+							</tr>
+
+							<tr>
+								<td><img src="https://image.ibb.co/nR6U4b/hobby_gym.png" style="height:50px"></td>
+								<td>Another strong passion of mine, I try to stay fit by going to the gym at least 3 times a week, mostly doing free weights exercises.</td>
+							</tr>
+
+							<tr>
+								<td><img src="https://image.ibb.co/eqzMHw/hobby_tkd.png" style="height:50px"></td>
+								<td>I achieved my 1st Dan Black Belt during my last year at uni! An achievement I have always been proud of.</td>
+							</tr>
 						</table>
 					</span>
-					<br>
-
-					<span>
-						<img src="https://image.ibb.co/mHkvcw/hobby_reading.png" style="height:50px"> Mostly fiction, adventure, sci-fi. Favourite authors / series include: Garth Nix (Old Kingdom), Philip Pullman (His Dark Materials), Brandon Sanderson (Mistborn), and Terry Pratchet (Disc World).
-					</span>
-					<br>
-
-					<span>
-						<img src="https://image.ibb.co/mBMqAG/hobby_vg.png" style="height:50px"> Forever PlayStation loyal, though I do also have a special place in my heart for NES and SNES from my childhood.
-					</span>
-					<br>
-
-					<span>
-						<img src="https://image.ibb.co/nR6U4b/hobby_gym.png" style="height:50px"> Another strong passion of mine, I try to stay fit by going to the gym at least 3 times a week, mostly doing free weights exercises.
-					</span>
-					<br>
-
-					<span>
-						<img src="https://image.ibb.co/eqzMHw/hobby_tkd.png" style="height:50px"> I achieved my 1st Dan Black Belt during my last year at uni! An achievement I have always been proud of.
-					</span>
-
 				</div>
 
 			</div>
