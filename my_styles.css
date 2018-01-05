@@ -71,8 +71,8 @@
 
 	tr, td {
 	    background-color: #868da4;
-	    border: none;
-	    padding: 0px 10px 0px 10px;
+	    border-width: 0;
+	    padding: 5px 10px 5px 10px!important;
 	}
 
 	.column-text {
